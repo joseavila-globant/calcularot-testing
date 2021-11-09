@@ -3,6 +3,8 @@ package calculator_test
 import (
 	"calculator"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestAdd(t *testing.T) {
@@ -13,4 +15,12 @@ func TestAdd(t *testing.T) {
 	} else {
 		t.Log("TestAdd finalizado corretamente")
 	}
+}
+
+func TestAddTestify(t *testing.T) {
+
+	sum := calculator.AddTestify(1, 2)
+
+	assert.Equal(t, 3, sum)
+
 }
