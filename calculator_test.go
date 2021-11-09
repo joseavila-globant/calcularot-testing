@@ -12,5 +12,6 @@ func TestAdd(t *testing.T) {
 		t.Fail()
 	} else {
 		t.Log("TestAdd finalizado corretamente")
+		t.Log(sum)
 	}
 }
